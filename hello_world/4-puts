@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -o puts(programming is like building a multiligual puzzle); 
+puts("\"programming is like building a multiligual puzzle/n"); 
