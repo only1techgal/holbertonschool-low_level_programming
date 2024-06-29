@@ -5,12 +5,18 @@
  * print_numbers - writes the character c to stdout
  * Return: Always 0.
  */
+
+void _putchar(int c) {
+    putchar(c);
+}
+
 void print_numbers(void)
 {
-	for (int n = 0; n <= 9; n++)
+	int n;
+	for (n = 0; n <= 9; n++)
 	{
-		putchar ('0' + n);
-	    putchar ('\n');
+		_putchar ('0' + n);
 	}
+	_putchar ('\n');
 
 }
