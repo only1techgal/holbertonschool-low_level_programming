@@ -19,5 +19,3 @@ for (int j = 0; i < 15; j++)
 	}
 	_putchar ("\n");
 }
-
-
