@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_numbers- This prints numbers from 0 to 9
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
  *
  * Return: Always 0.
  */
