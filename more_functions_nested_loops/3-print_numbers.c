@@ -6,8 +6,9 @@
  * Return: Always 0.
  */
 
-void _putchar(int c) {
-    putchar(c);
+int _putchar(char c) 
+{
+    return (write(1, &c, 1));
 }
 
 void print_numbers(void)
