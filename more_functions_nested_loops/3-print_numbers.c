@@ -6,14 +6,10 @@
  * Return: Always 0.
  */
 
-int _putchar(char c)
-{
-    putchar(c);
-}
-
 void print_numbers(void)
 {
 	int n;
+
 	for (n = 0; n <= 9; n++)
 	{
 		_putchar ('0' + n);
