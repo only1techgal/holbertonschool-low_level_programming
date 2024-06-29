@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - This multipies integers
- *@c: char to mutiply
- * 
+ * mul - This multipies integers
+ * @a: first variable
+ * @b: second variable
  * Return: Always 0.
  */
 int mul(int a, int b)
