@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-#include <stddef.h
+#include <stddef.h>
 
 /**
 * @s: memory area to be filled
