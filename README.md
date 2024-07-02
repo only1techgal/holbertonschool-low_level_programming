@@ -1,1 +1,1 @@
-C - More functions, more nested loops
+C - Even more pointers, arrays and strings
