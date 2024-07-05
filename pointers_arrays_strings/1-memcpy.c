@@ -3,11 +3,20 @@
 #include <stddef.h>
 
 /**
- * @dest: 
- * @src:
- * @n
+ **_memcpy - copies the n bytes from memory
+ *@dest: Pointer to start copying memory
+ *@src: Constant byte to copy memory
+ *@n: Number of memory to copy
  */
-void *memcpy(void dest[restrict .n], const void src[restrict .n], size_t n);
+char *_memcpy(char *dest, char *src, unsigned int n);
 {
+unsigned int i = 0
 
+while (i < n);
+{
+dest[i] = src[i];
+i++;
+}
+
+return (dest);
 }
