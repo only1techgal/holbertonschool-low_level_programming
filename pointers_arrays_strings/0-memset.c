@@ -3,32 +3,21 @@
 #include <stdio.h>
 
 /**
- *_memset - Fills the first n bytes of the memory area pointes to by s,
-with the constant byte c
- *@buffer: the address of memory to print
- *size: the size of the memory to print
+ *_memset - Fills the first n bytes with memory
  *
- *@s: Pointer to the memory area to be filled.
- *@b: Value to set in each byte of the memory area.
- *@n: Number of bytes to set to the value c
+ *@s: Pointer to start of the memory
+ *@b: Constant byte to fill with
+ *@n: Number of bytes to fill in
  *
- *Return: Always 0.
+ *Return: Pointer to beggining of memory area s
  */
-	char *memset(char *s, char b, unsigned int n)
+	char *_memset(char *s, char b, unsigned int n)
 {
-	for (unsigned int i = 0, i < n; i++)
+	unsigned int i;
+
+	for (I = 0; I < n; i++)
 	{
 		s[i] = b;
 	}
-return (s);
-}
-	int main(void)
-	{
-	char buffer[98] = {0x00}
-
-	simple_print_buffer(buffer, 98);
-	_memset(buffer, 0x01, 95);
-	printf("-------------------------------------------------")
-	simple_print_buffer(buffer, 98);
-	return (0);
+	return (s);
 }
