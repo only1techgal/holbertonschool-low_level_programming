@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- *_memset - Fills the first n bytes with memory
+ **_memset - Fills the first n bytes with memory
  *
  *@s: Pointer to start of the memory
  *@b: Constant byte to fill with
@@ -15,7 +15,7 @@
 {
 	unsigned int i;
 
-	for (I = 0; I < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		s[i] = b;
 	}
