@@ -11,13 +11,37 @@
  *If c is found - a pointer to the first occurance.
  *if c is not found - NULL
  */
-unsigned int _strchr(char *s, char *accept);
+char *_strchr(char *s, char c)
 {
-int index;
-for (index = 0; s[index] >= '\0'; index++)
+char *a;
+char b;
+b = c;
+if (b == '\0')
 {
-if (s[index] == c)
-return (s + index);
+return (s);
 }
-return ("\0");
+for ( ; *s != '\0'; s += 1)
+{
+if (*s != b)
+{
+continue;
 }
+
+a = s;
+while (1)
+{
+if (b == '\0')
+{
+return (s);
+}
+if (*a++ != b++)
+{
+break;
+}
+}
+b = c;
+}
+
+return (NULL);
+}
+
