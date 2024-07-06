@@ -4,7 +4,7 @@
 
 /**
  *_strchr- locates the first occurance of the character c in the string
- *Return: NULL if the character is not found
+ *Return NULL if the character is not found
  *@s: the string to be searched
  *@c: the character to be located
  *If c is found - a pointer to the first occurance.
