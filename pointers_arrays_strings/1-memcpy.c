@@ -3,24 +3,19 @@
 #include <stddef.h>
 
 /**
- *_memcpy - copies the @n bytes from memory area @src
- to memory area @dest
+ *_memcpy - copies the bytes to memory area to memory ares dest
+ *@dest: destination memory area
+ *@src: Source memory are
+ *@n: Number of bytes to copy
  *
- *@dest: Pointer to start copying memory
- *@src: Constant byte to copy memory
- *@n: Number of memory to copy
- *
- *Return: a pointer to @dest
+ *Return: a pointer to dest
  */
-char *_memcpy(char *dest, char *src, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-unsigned int i = 0
-
-while (i < n)
+char *ptr = dest;
+while (n-- > 0)
 {
-dest[i] = src[i];
-i++;
+*dest++ = *src++;
 }
-
-return (dest);
+return (ptr);
 }
