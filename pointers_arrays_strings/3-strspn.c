@@ -15,9 +15,9 @@ int match;
 while (*s != '\0')
 {
 match = 0;
-while (*accept != '\0')
+for (int i = 0; accept[i] != '\0'; i++)
 {
-if (*s == *accept)
+if (*s == accept[i])
 {
 match = 1;
 break;
@@ -30,7 +30,6 @@ break;
 }
 count++;
 s++;
-accept = accept - count;
 }
 return (count);
 }
