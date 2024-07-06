@@ -4,42 +4,26 @@
 
 /**
  *_strchr- locates the first occurance of the character c in the string
- or NULL if the character is not found
+ *Return: NULL if the character is not found
  *@s: the string to be searched
  *@c: the character to be located
- *
  *If c is found - a pointer to the first occurance.
  *if c is not found - NULL
  */
 char *_strchr(char *s, char c)
 {
-char *a;
-char b;
-b = c;
-if (b == '\0')
+while (*s != '\0')
+{
+if (*s == c)
 {
 return (s);
 }
-for ( ; *s != '\0'; s += 1)
-{
-if (*s != b)
-{
-continue;
+s++;
 }
 
-a = s;
-while (1)
-{
-if (b == '\0')
+if (c == '\0')
 {
 return (s);
-}
-if (*a++ != b++)
-{
-break;
-}
-}
-b = c;
 }
 
 return (NULL);
