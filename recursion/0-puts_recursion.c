@@ -26,4 +26,3 @@ _puts_recursion(str);
 putchar('\n');
 return;
 }
-
