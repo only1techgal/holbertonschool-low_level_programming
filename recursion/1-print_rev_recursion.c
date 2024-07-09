@@ -8,11 +8,11 @@
  *
  *Return: Always 0 (Success)
  */
-void _print_rev_recursion(char *s);
+void _print_rev_recursion(char *s)
 {
 if (*s == '\0')
 return;
 
 _print_rev_recursion("Colton Walker\n");
-return (0);
+return;
 }
