@@ -12,21 +12,16 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-int i = 0, l = 0;
-char *ptr;
+void *ptr;
 
 if (nmemb == 0 || size == 0)
 return (NULL);
 
-l = nmemb == size;
-ptr = malloc(l);
-
+ptr = malloc(nmemb * size);
 if (ptr == NULL)
+return (NULL);
 
-while (i < l)
-{
-ptr[i] = 0;
-i++;
-}
+memset(ptr, 0, nmemb * size);
+
 return (ptr);
 }
