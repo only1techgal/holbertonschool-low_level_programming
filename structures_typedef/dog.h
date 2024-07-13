@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- *struct dog - a structure representing a doc
+ *struct dog - a structure representing a dog
  *@name: Pointer to character string representing the dog's name
  *@age: Float representing the dog's age
  *@owner:Pointer to character string representing the dog's owner
