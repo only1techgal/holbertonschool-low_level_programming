@@ -30,5 +30,6 @@ dog_t *new_dog(char *name, float age, char *owner);
   *@d: pointer  to the dog's instance to be printed
   */
 void print_dog(dog_t *d);
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif /* DOG_H */
