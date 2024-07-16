@@ -32,7 +32,15 @@ dog_t *new_dog(char *name, float age, char *owner);
 void print_dog(dog_t *d);
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-dog_t *new_dog(char *name, float age, char *owner);
+
+/**
+ *print_dog - Prints a struct dog
+ *@d: The struct dog to print
+ *Return: void
+ */
+inline dog_t *new_dog(char *name, float age, char *owner);
+
+
 void free_dog(dog_t *d);
 
 #endif /* DOG_H */
