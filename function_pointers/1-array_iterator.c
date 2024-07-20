@@ -6,7 +6,7 @@
 /**
  *array_iterator - Executes a function given as a parameter on array
  *@action: Pointer to the function as parameter on array
- *@size: the size of ther array
+ *@size: the size of the array
  *@array: Pointer to the array of integers
  *Return: 0 (Success)
  */

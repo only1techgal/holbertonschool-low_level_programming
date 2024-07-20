@@ -1,1 +1,1 @@
-C - Variadic functions
+C - Functions, nested loops
