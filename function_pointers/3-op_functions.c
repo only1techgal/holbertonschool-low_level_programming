@@ -2,62 +2,61 @@
 #include <stdlib.h>
 
 /**
- *op_add: Returns the sum
- *@a: The first integer of the sum which is to be returned
- *@b: The second intager of the sum which is to be returned
+ *op_add: Returns the sum of two integers
+ *@a: The first integer to be added
+ *@b: The second integer to be added
  *
- *Return: 1 (success)
+ *Return: The sum of a and b
  */
- int op_add(int a, int b)
- {
-    return (a + b);
- }
+int op_add(int a, int b)
+{
+return (a + b);
+}
 
  /**
-  *op_sub: Returns the difference 
-  *@a The first integer of the difference ti be returned
-  *@b: the seconf integer of the difference to be returned
+  *op_sub: Returns the difference of two integers
+  *@a: The first integer to be subtracted
+  *@b: The second integer to be subtracted
   *
-  *Return: 0 (success)
+  *Return: The difference of a and b
   */
-  int op_sub(int a, int b)
-  {
-   return (a - b);
-  }
+int op_sub(int a, int b)
+{
+return (a - b);
+}
 
   /**
-   *op_mul - Returns the product
-   *@a: The first integer of the product which is to be returned
-   *@b: The second integer of the product whihc is to be retuned
+   *op_mul - Returns the product of two integers
+   *@a: The first integer to be multiplied
+   *@b: The second integer to be multiplied
    *
-   *Return: 1 (Success)
+   *Return: The product of a and b
    */
-   int op_mul(int a, int b)
-   {
-      return (a * b);
-   }
+int op_mul(int a, int b)
+{
+return (a * b);
+}
 
    /**
-   *op_div - Returns the division
-   *@a: The first integer of the division which is to be returned
-   *@b: The second integer of the division which is to be returned
+   *op_div - Returns the division of two integers
+   *@a: The numerator
+   *@b: The denominator
    *
-   *Return: 0 (Success)
+   *Return: The quotient of a divided by b
    */
-   int op_div(int a, int b)
-   {
-      return (a / b);
-   }
+int op_div(int a, int b)
+{
+return (a / b);
+}
 
    /**
-    *op_mod - Returns the remainder
-    *@a: The first integer of the the remainder which is to be returned
-    *@b: The second integer of the remainder which is to be returned
+    *op_mod - Returns the remainder of the division of two integers
+    *@a: The numerator
+    *@b: The denominator
     *
-    *Return: 
+    *Return: The remainder of a divided by b
     */
-    int op_mod(int a, int b)
-   {
-      return (a % b);
-   }
-    
+int op_mod(int a, int b)
+{
+return (a % b);
+}
