@@ -1,1 +1,1 @@
-C- Function pointers
+C - Variadic functions
