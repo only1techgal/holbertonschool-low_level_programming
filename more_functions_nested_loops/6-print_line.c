@@ -1,22 +1,25 @@
-#include "main.h"
+#include <unistd.h>
 #include <stdio.h>
-/**
-*print_line- Thish draws a straight line
-*Return: Always 0.
-*/
+#include <stddef.h>
 
+/**
+ * print_line - draws a straight line in the terminal
+ * @n: The number of times the character '_' should be printed
+ * 
+ * If n is 0 or less, only prints a newline.
+ */
 void print_line(int n)
 {
-  int n;
-  if (n <= 0) 
-  {
-    _putchar('\n');
-    }else
-        for (int i = 0; i < n; i++)
-        {
-            _putchar('_');
-        }
-    _putchar('\n');
-    }
-
+int i;
+if (n <= 0)
+{
+putchar('\n');
+return;
+}
+    
+for (i = 0; i < n; i++)
+{
+putchar('_');
+}
+putchar('\n');
 }
