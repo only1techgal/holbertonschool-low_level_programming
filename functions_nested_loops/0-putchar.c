@@ -1,21 +1,17 @@
 #include <unistd.h>
-#include <stdio.h>
 
 /**
- *main - prints _putchar, follwed by a new line
+ * main - Entry point
  *
- *Return: Always 0 (Success).
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-putchar('_');
-putchar('p');
-putchar('u');
-putchar('t');
-putchar('c');
-putchar('h');
-putchar('a');
-putchar('r');
-putchar('\n');
+char *str = "_putchar\n";
+while (*str)
+{
+write(1, str, 1);
+str++;
+}
 return (0);
 }
